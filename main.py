@@ -4,9 +4,9 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = 'viper-seo'
-HOMEPAGE = 'http://viper-seo.com/'
-DOMAIN_NAME = get_domain_name(HOMEPAGE)
+PROJECT_NAME = 'wikidot_dnd'
+HOMEPAGE = 'http://dnd5e.wikidot.com/'
+DOMAIN_NAME = get_sub_domain_name(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + '/queue.txt'
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'
 NUMBER_OF_THREADS = 8

@@ -13,9 +13,10 @@ class LinkFinder(HTMLParser):
     # When we call HTMLParser feed() this function is called when it encounters an opening tag <a>
     def handle_starttag(self, tag, attrs):
         if tag == 'a' or tag == 'link':
-            print("found one!", tag, attrs)
+            #print("found one!", tag, attrs)
             for (attribute, value) in attrs:
                 if attribute == 'href':
+                    print(value)
                     url = parse.urljoin(self.base_url, value)
                     self.links.add(url)
 

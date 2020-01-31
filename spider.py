@@ -65,7 +65,9 @@ class Spider:
         for url in links:
             if (url in Spider.queue) or (url in Spider.crawled):
                 continue
-            if Spider.domain_name != get_domain_name(url) or Spider.domain_name != get_sub_domain_name(url):
+            print(Spider.domain_name, get_domain_name(
+                url), get_sub_domain_name(url))
+            if Spider.domain_name != get_domain_name(url) and Spider.domain_name != get_sub_domain_name(url):
                 continue
             Spider.queue.add(url)
 

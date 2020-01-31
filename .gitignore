@@ -1,2 +1,5 @@
 .idea
 __pycache__
+wikidot_dnd/crawled.txt
+wikidot_dnd/queue.txt
+.vscode/settings.json
